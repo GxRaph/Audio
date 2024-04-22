@@ -1,0 +1,52 @@
+<!--Tyler Ray Michael Egner-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+    
+        #video-background {  /* Calling my video id to set the size of it to fit the background */
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%; 
+            min-height: 100%;
+            width: auto;
+            height: auto;
+        }
+        #content {
+        position: absolute;     
+        text-align: right;      /* Make stext align on right side of screen */
+        padding: 20px;                  /* Gives the words some space away from the screen edge */
+        bottom: 0;          /* Positions my content in the bottom right */
+        right: 0;
+        color: rgb(89, 80, 80);
+    }
+</style>
+</head>
+<body>
+<video id="video-background" autoplay muted loop>                   <!--Giving my video an id to style it with CSS, autoplays video on a loop-->
+        <source src="filtered-395A6532-6818-4744-9839-15B06692C054.mp4" type="video/mp4"> <!--Source url for my background video-->
+    </video>
+
+    <audio id="audio" src="001 Group A1 2.wav" controls></audio> <!--Giving my audio an id and putting in my source for the sound, as well as adding a control panel to play audio-->
+
+    <div id="content">          <!--Naming my content for the page to style it with inline CSS-->
+    <h1>Welcome, Relax. <br>
+    <h1>Press play and listen to the soothing instrumental I made<br> <!--I used the break element to separate my header into 3 lines-->
+    <h1>while my cat "<span style="color: red;">C</span>        <!--I used the span element to make each letter in cheese a different color-->
+        <span style="color: rgb(255, 106, 0);">h</span>
+        <span style="color: rgb(255, 230, 0);">e</span>
+        <span style="color: rgb(0, 255, 21);">e</span>
+        <span style="color: rgb(0, 132, 255);">s</span>
+        <span style="color: rgb(102, 0, 255);">e</span>" chills on me</h1>
+</div>
+</body>
+</html>
